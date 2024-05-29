@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="c.css" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="left-section">
+        <header class="header-left">
+          <input
+            class="search-bar"
+           
+            type="text"
+            placeholder="Назва товару"
+          />
+          <button class="add-btn" data-tooltip="Додати">Додати</button>
+        </header>
+
+        <section class="ptoducts-left">
+          <div class="line1">
+            <div class="product-name">
+              <span
+                data-tooltip="Помідори"
+                class="tomato"
+                style="text-decoration: line-through"
+                >Помідори</span
+              >
+            </div>
+
+            <div class="three-lines">
+              <span  class="quantity">2</span>
+            </div>
+
+            <div class="user-choose">
+              <button
+                data-tooltip="Не куплено"
+                class="no-bought"
+      
+              >
+                Не куплено
+              </button>
+            </div>
+          </div>
+
+          <div class="line2">
+            <div class="product-name">
+              <span class="tomato" data-tooltip="Печиво">Печиво</span>
+            </div>
+
+            <div class="three-lines">
+              <button class="minus-btn" data-tooltip="Зменшити">-</button>
+              <span class="quantity">2</span>
+              <button class="plus-btn" data-tooltip="Додати">+</button>
+            </div>
+
+            <div class="user-choose">
+              <button class="bought" data-tooltip="Куплено">Куплено</button>
+              <button class="cancel-btn" data-tooltip="Скасувати">×</button>
+            </div>
+          </div>
+
+          <div class="line3">
+            <div class="product-name">
+              <input 
+                class="search"
+                type="text"
+                value="Сир"
+                data-tooltip="Поле введення"
+              />
+            </div>
+
+            <div class="three-lines">
+              <button class="minus-btn" data-tooltip="Не дозволено" style="background-color: #E3A2A0; box-shadow: 0px 2px 0px #E3A2A0; cursor: not-allowed;">-</button>
+              <span class="quantity" >2</span>
+              <button class="plus-btn" data-tooltip="Додати">+</button>
+            </div>
+
+            <div class="user-choose">
+              <button class="bought" data-tooltip="Куплено" >Куплено</button>
+              <button class="cancel-btn" data-tooltip="Скасувати">×</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="right-section">
+        <div class="right1-line">
+          <span class="text-item"  data-tooltip="Залишилося"> Залишилося </span>
+        </div>
+        <div class="right2-line">
+          <span class="product-item" data-tooltip="Печиво">
+            Печиво
+            <span class="amount" >4</span>
+          </span>
+          <span class="product-item" data-tooltip="Сир">
+            Сир
+            <span class="amount" >4</span>
+          </span>
+        </div>
+        <div class="right3-line">
+          <span class="text-item" data-tooltip="Куплено"> Куплено </span>
+        </div>
+        <div class="right4-line">
+          <span class="product-item" style="text-decoration: line-through" data-tooltip="Помідори">
+            Помідори
+            <span class="amount" style="text-decoration: line-through">2</span>
+          </span>
+        </div>
+      </section>
+    </section>
+
+    <section class="badge">
+      <span class="buylist">Buy List</span>
+      <span class="whocreate">Created by:</span>
+      <span class="name">Vika Romaniuk</span>
+    </section>
+  </body>
+</html>
